@@ -1,5 +1,5 @@
 export function HighlightsSeccion(){
     return(
-        <section></section>
+        <section className="highlightsContainer"></section>
     )
 }

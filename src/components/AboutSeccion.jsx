@@ -1,5 +1,5 @@
 export function AboutSeccion(){
     return(
-        <section></section>
+        <section className="aboutContainer"></section>
     )
 }

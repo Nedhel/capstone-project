@@ -1,5 +1,5 @@
 export function HeroSeccion(){
     return(
-        <section></section>
+        <section className="heroContainer"></section>
     )
 }

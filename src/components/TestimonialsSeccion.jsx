@@ -1,5 +1,5 @@
 export function TestimonialsSeccion(){
     return(
-        <section></section>
+        <section className="testimonialsContainer"></section>
     )
 }

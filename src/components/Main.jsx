@@ -5,7 +5,7 @@ import {AboutSeccion} from './AboutSeccion'
 
 export default function Main(){
     return(
-        <main>
+        <main className='mainContainer'>
             <HeroSeccion />
             <HighlightsSeccion />
             <TestimonialsSeccion />
