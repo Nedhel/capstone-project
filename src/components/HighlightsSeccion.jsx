@@ -8,6 +8,7 @@ export function HighlightsSeccion(){
             <h1>Specials</h1>
             <div></div>
             <button>Online Menu</button>
+            <div className='cardContainer'>
             <div className="card">
                 <img src={Greek} alt="Greek Salad" />
                 <div className='cardContent'>
@@ -40,6 +41,7 @@ export function HighlightsSeccion(){
                     <p>This comes straight from grandma’s recipe book, every last ingredient has been sourced and is as authentic as can be imagined.</p>
                     <h3>Order a delivery</h3>
                 </div>
+            </div>
             </div>
         </section>
     )

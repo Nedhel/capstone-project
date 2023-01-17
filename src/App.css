@@ -10,6 +10,7 @@
   position: relative;
   padding: 0 10vw;
   min-height: 28vw;
+  width: auto;
 }
 .heroContainer > div{
   width: 45%;
@@ -50,11 +51,18 @@
 .highlightsContainer{
   padding: 5vw 10vw;
   display: grid;
-  grid-template-columns: repeat(3,400px);
+  grid-template-columns: repeat(3,auto);
   grid-template-rows: auto auto;
   gap: 10px;
   justify-content: center;
   align-items: center;
+}
+.cardContainer{
+  grid-column: 1 / span 3;
+  display: flex;
+  justify-content: center;
+  gap: 2vw;
+  width: 100%;
 }
 .highlightsContainer > h1{
   font-size: 64px;
@@ -72,7 +80,7 @@
 }
 .card{
   background-color: #EDEFEE;
-  width: 80%;
+  max-width: 300px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -163,6 +171,9 @@
 li{
   display: block;
 }
+.hamburguerContainer{
+  display: none;
+}
 h1,h2,h3{
   font-family: 'Markazi Text', serif;
 }
@@ -173,4 +184,76 @@ p{
   display: flex;
   justify-content: space-around;
   padding: 0 10vw;
+}
+
+@media only screen and (max-width: 800px) {
+  .header{
+    display: flex;
+    justify-content: flex-start;
+    padding: 2vw;
+  }
+  .hamburguerContainer{
+    display: inline-block;
+    flex-grow: 1;
+  }
+  .nav{
+    display: none;
+  }
+  .logoContainer{
+    display: inline-block;
+    flex-grow: 1;
+  }
+  .heroContainer{
+    display: flex;
+    justify-content: center;
+    background-color: #495E57;
+    width: auto;
+  }
+  .heroImgContainer{
+    display: none;
+  }
+  .heroInfoContainer{
+    flex: 50%;
+    width: 100%;
+  }
+  .highlightsContainer{
+    display: flex;
+    flex-direction: column;
+  }
+  .cardContainer{
+    display: flex;
+    justify-content: flex-start;    
+    gap: 2vw;
+    width: 100%;
+    overflow-x: auto;
+  }
+  .card{
+    min-width: 250px;
+  }
+  .aboutContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .aboutContainer > div{
+    width: 100%;
+    position: relative;
+    
+  }
+  .aboutImgContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2vw;
+  }
+  .aboutImg1, .aboutImg2{
+    position: relative;
+    top: 0;
+  }
+  .footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0;
+  }
 }
