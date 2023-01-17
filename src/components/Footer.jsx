@@ -1,7 +1,7 @@
 import Logo from '../assets/Logo.svg'
 export default function Footer(){
     return(
-        <footer>
+        <footer className='footer'>
             <img src={Logo} alt="Logo" />
             <div>
                 <h4>Doormat Navigation</h4>

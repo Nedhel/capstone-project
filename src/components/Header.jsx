@@ -4,7 +4,7 @@ import Logo from '../assets/Logo.svg'
 
 export default function Header(){
     return(
-        <header>
+        <header className='header'>
             <img src={Logo} alt="Logo Little Lemon"/>
             <Nav />
         </header>

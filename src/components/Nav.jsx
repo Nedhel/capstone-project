@@ -1,25 +1,26 @@
-import { Link } from 'react-scroll'
+import { Link } from "react-router-dom";
+
 export function Nav(){
     return(
-        <nav>
+        <nav className="nav">
             <ul>
                 <li>
-                    <Link to='Home'>Home</Link>
+                    <Link to='/'>Home</Link>
                 </li>
                 <li>
-                    <Link to='About'>About</Link>
+                    <Link to=''>About</Link>
                 </li>
                 <li>
-                    <Link to='Menu'>Menu</Link>
+                    <Link to=''>Menu</Link>
                 </li>
                 <li>
-                    <Link to='Reservation'>Reservation</Link>
+                    <Link to='booking'>Reservation</Link>
                 </li>
                 <li>
-                    <Link to='Order'>Order Online</Link>
+                    <Link to=''>Order Online</Link>
                 </li>
                 <li>
-                    <Link to='Login'>Login</Link>
+                    <Link to=''>Login</Link>
                 </li>
             </ul>
         </nav>
