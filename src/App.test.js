@@ -1,8 +1,15 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import { fireEvent, render, screen } from "@testing-library/react";
+import Bookingform from "../src/components/Bookingform";
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+test("Test reduce function", () => {
+    const setAvailableTime = jest.fn();
+    render(
+        <Bookingform
+            availableTime={{ times: ["17:00"] }}
+            setAvailableTime={setAvailableTime}
+        />
+    );
+    const text = screen.getByLabelText(/Choose date/);
+
+    expect(text).toBeInTheDocument();
 });
