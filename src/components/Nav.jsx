@@ -5,22 +5,22 @@ export function Nav(){
         <nav className="nav">
             <ul>
                 <li>
-                    <Link to='/'>Home</Link>
+                    <Link to='/' aria-label="On Click">Home</Link>
                 </li>
                 <li>
-                    <Link to=''>About</Link>
+                    <Link to='' aria-label="On Click">About</Link>
                 </li>
                 <li>
-                    <Link to=''>Menu</Link>
+                    <Link to='' aria-label="On Click">Menu</Link>
                 </li>
                 <li>
-                    <Link to='booking'>Reservation</Link>
+                    <Link to='/booking' aria-label="On Click">Reservation</Link>
                 </li>
                 <li>
-                    <Link to=''>Order Online</Link>
+                    <Link to='' aria-label="On Click">Order Online</Link>
                 </li>
                 <li>
-                    <Link to=''>Login</Link>
+                    <Link to='' aria-label="On Click">Login</Link>
                 </li>
             </ul>
         </nav>
