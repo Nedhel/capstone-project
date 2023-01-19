@@ -1,4 +1,6 @@
 import Logo from '../assets/Logo.svg'
+import { Link } from "react-router-dom";
+
 export default function Footer(){
     return(
         <footer className='footer'>
@@ -6,10 +8,10 @@ export default function Footer(){
             <div>
                 <h4>Doormat Navigation</h4>
                 <ul>
-                    <li>Home</li>
+                    <li><Link to='/' aria-label="On Click">Home</Link></li>
                     <li>About</li>
                     <li>Menu</li>
-                    <li>Reservation</li>
+                    <li><Link to='/booking' aria-label="On Click">Reservation</Link></li>
                     <li>Order Online</li>
                     <li>Login</li>
                 </ul>

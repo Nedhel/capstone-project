@@ -34,7 +34,7 @@ export default function Bookingform({availableTime, setAvailableTime, submitForm
         e.preventDefault();
         const formData={date:date, time:time, guests:guests, occasion:occasion}
         console.log(formData)
-        //submitForm(formData)
+        submitForm(formData)
     }
     return(
         <form style={{display: 'grid', maxWidth: '200px', gap: '20px'}} className='form' onSubmit={handleSubmit}>
